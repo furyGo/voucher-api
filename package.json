@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsc && node dist/server.js",
     "build": "tsc",
-    "run": "node dist/server.js"
+    "proc": "node dist/server.js"
   },
   "author": "",
   "license": "ISC",
