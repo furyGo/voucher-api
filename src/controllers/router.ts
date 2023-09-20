@@ -14,7 +14,7 @@ router.get("/voucher/status", async (ctx: any) => {
 	}
 });
 
-router.get("/voucher/claim", async (ctx: any) => {
+router.post("/voucher/claim", async (ctx: any) => {
 	const token = ctx.request.token
 	const address = await service.getAddress(token)
 	const voucher = await service.checkClaimed(address)
