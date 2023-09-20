@@ -1,6 +1,6 @@
-FROM node:17.4.0
+FROM node:18.16.0
 
-ENV WORKDIR='/eventDecoder'
+ENV WORKDIR='/voucher-api'
 
 WORKDIR $WORKDIR
 
@@ -9,4 +9,4 @@ ADD ./ $WORKDIR
 RUN yarn
 RUN yarn build
 
-CMD yarn pro
+CMD yarn proc
