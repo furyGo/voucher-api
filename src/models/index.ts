@@ -4,7 +4,7 @@ export const sequelize = new Sequelize({
 	username: process.env.DBUSER ?? 'root',
 	host: process.env.DBHOST ?? '192.168.100.111',
 	password: process.env.DBPWD ?? '123456',
-	database: process.env.DBPNAME ?? 'temp_vouchers'
+	database: process.env.DBNAME ?? 'temp_vouchers'
 });
 
 export class Vouchers extends Model { }
